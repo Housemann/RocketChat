@@ -62,7 +62,8 @@ ROCKET_SendRocket_Msg(
 );
 ```
 
-Funktion zum Senden mit allen Feldern
+Funktion zum Senden mit allen Feldern.
+Mit der Variable $collapsed (true/false), kann man die Werte $image und $fields auf bzw. zuklappen. Das klappt leider nur mit der Browser/Desktop Version, nicht jedoch mit der Handy App.
 ```php
 ROCKET_SendRocket(    
        $InstanzID,
