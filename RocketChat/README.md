@@ -70,8 +70,8 @@ ROCKET_SendRocket(
 );
 ```
 
-Bei den $fields muss ein JSON Codierter String übergeben werden mit den Inhalten für short / title / value.
-Bei RocketChat können zwei Werte nebeneinander dargestellt werden, dafür ist das Feld "short" auf true zu setzten. Wenn false, dann werden die Werte untereinander dargestellt.
+Bei den $fields muss ein JSON Codierter String mit den folgenden Inhalten für short / title / value übergeben werden.
+Bei RocketChat können zwei Werte nebeneinander dargestellt werden, dafür ist das Feld "short" auf "true" zu setzten. Wenn "false", dann werden die Werte untereinander dargestellt.
 ```php
 Array
 (
