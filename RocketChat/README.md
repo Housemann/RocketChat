@@ -51,6 +51,18 @@ Erklärung der Funktion.
 Beispiel:
 `ROCK_BeispielFunktion(12345);`
 
+Funktion nur zum Senden einer Nachricht
+```php
+ROCKET_SendRocket_Msg(
+       $InstanzID,
+       $channel = '#Webhook',
+       $message = 'Hallo this is a Message',
+       $alias = 'Housemann',
+       $avatar_url = 'https://static.wikia.nocookie.net/jamescameronsavatar/images/0/08/Neytiri_Profilbild.jpg/revision/latest?cb=20100107164021&path-prefix=de',
+);
+```
+
+Funktion zum Senden mit allen Feldern
 ```php
 ROCKET_SendRocket(    
        $InstanzID,

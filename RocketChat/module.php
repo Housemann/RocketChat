@@ -25,14 +25,14 @@ declare(strict_types=1);
 			parent::ApplyChanges();
 		}
 
-		
-		public function SendRocket_Msg(string $channel, string $message)
+		// Funktion nur zum Senden einer Nachricht an einen Channel
+		public function SendRocket_Msg(string $channel, string $message, string $alias, string $avatar_url)
 		{
-			$ReturnMsg = $this->SendRocket(
+			$ReturnMsg = $this->SendRocket_intern(
 				$channel, 
 				$message, 
-				$alias=null, 
-				$avatar_url=null,
+				$alias, 
+				$avatar_url,
 				$color=null,
 				$author_name=null,
 				$author_icon=null,
@@ -46,7 +46,44 @@ declare(strict_types=1);
 			return $ReturnMsg;
 		}
 		
-		private function SendRocket(
+		// Funktion komplett
+		public function SendRocket(
+			string $channel, 
+			string $message, 
+			string $alias, 
+			string $avatar_url,
+			string $color,
+			string $author_name,
+			string $author_icon,
+			string $author_link,				
+			string $title,
+			string $title_link,
+			string $collapsed,
+			string $image,
+			string $fields
+		)
+		{
+			$ReturnMsg = $this->SendRocket_intern(
+				$channel,
+				$message,
+				$alias, 
+				$avatar_url,
+				$color,
+				$author_name,
+				$author_icon,
+				$author_link,				
+				$title,
+				$title_link,
+				$collapsed,
+				$image,
+				$fields			
+			);
+			return $ReturnMsg;
+		}		
+		
+		
+		// Komplette interne Funktion die angesprochen werden kann
+		private function SendRocket_intern(
 				string $channel, 
 				string $message, 
 				string $alias=null, 
