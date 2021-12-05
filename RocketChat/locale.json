@@ -1,0 +1,16 @@
+{
+    "translations": {
+        "de": {
+            "Webhook URL Adress:": "Webhook URL Adresse:",
+            "Avatar URL Adress": "Avatar URL Adresse",
+            "Channel (Must begin with #)": "Kanal (Muss mit # beginnen)",
+            "Channel must begin with #": "Kanal muss mit # beginnen"
+        },
+        "de_DE": {
+            "Webhook URL Adress:": "Webhook URL Adresse:",
+            "Avatar URL Adress": "Avatar URL Adresse",
+            "Channel (Must begin with #)": "Kanal (Muss mit # beginnen)",
+            "Channel must begin with #": "Kanal muss mit # beginnen"
+        }
+    }
+}

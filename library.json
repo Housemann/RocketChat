@@ -1,0 +1,12 @@
+{
+    "id": "{0FE668C6-DBF1-AFD7-0F62-232E3469BB20}",
+    "name": "RocketChat",
+    "author": "Housemann",
+    "url": "https://github.com/Housemann/RocketChat",
+    "compatibility": {
+        "version": "5.5"
+    },
+    "version": "1.0",
+    "build": 20211120,
+    "date": 20
+}

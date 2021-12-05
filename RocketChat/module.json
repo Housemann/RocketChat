@@ -1,0 +1,12 @@
+{
+    "id": "{F445094A-D6B3-88C5-8D9F-6A4314C9AF89}",
+    "name": "RocketChat",
+    "type": 3,
+    "vendor": "",
+    "aliases": ["RocketChat"],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "ROCKET",
+    "url": "https://github.com/Housemann/RocketChat"
+}

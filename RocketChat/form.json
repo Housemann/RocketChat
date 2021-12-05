@@ -1,0 +1,28 @@
+{
+    "elements": [
+        { 
+            "type": "Label",
+            "caption": "************************** Rocket Chat ***************************"
+        },
+        { 
+            "type": "Label",
+            "caption": "https://de.rocket.chat"
+        },
+        { 
+            "type": "Label",
+            "caption": "******************************************************************"
+        },
+        { 
+            "type": "ValidationTextBox", 
+            "name": "webhook_url", 
+            "caption": "Webhook URL Adress:",
+            "width": "900px",
+            "validate": "^http"
+        },
+        {
+            "type": "Label"
+        }
+    ],
+    "actions": [],
+    "status": []
+}
