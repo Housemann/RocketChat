@@ -31,16 +31,12 @@ Beschreibung des Moduls.
  Unter 'Instanz hinzufügen' kann das 'RocketChat'-Modul mithilfe des Schnellfilters gefunden werden.  
 	- Weitere Informationen zum Hinzufügen von Instanzen in der [Dokumentation der Instanzen](https://www.symcon.de/service/dokumentation/konzepte/instanzen/#Instanz_hinzufügen)
 
-### 5. Statusvariablen und Profile
+### 5. Konfiguration der Instanz
 
-Die Statusvariablen/Kategorien werden automatisch angelegt. Das Löschen einzelner kann zu Fehlfunktionen führen.
-
-#### Statusvariablen
-
-Name   | Typ     | Beschreibung
------- | ------- | ------------
-       |         |
-       |         |
+Es mus in Rocket.Chat im Administrationsbereich ein eingehender WebHook unter "</> Integration" hinzugefügt werden. 
+Kanal und User (Muss vorhanden sein) muss angegeben sein. 
+Nach dem Speichern erhält man seine Webhook-URL Beispiel: https://DeineDomain.com/hooks/PJfhjauiesv7tprdghhA/S7zkedvhiiQiZwkdsoslwölkapxdsdklslkdynTer
+Diese muss man im Modul hinterlegen.
 
 
 ### 6. PHP-Befehlsreferenz
