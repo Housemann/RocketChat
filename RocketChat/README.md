@@ -59,12 +59,43 @@ ROCKET_SendRocket(
        $alias = 'Housemann',
        $avatar_url = 'https://static.wikia.nocookie.net/jamescameronsavatar/images/0/08/Neytiri_Profilbild.jpg/revision/latest?cb=20100107164021&path-prefix=de',
        $color = '#ff0000',
-       $author_icon = 'https://mar.prod.image.rndtech.de/var/storage/images/haz/nachrichten/kultur/kino/james-cameron-will-mission-munroe-verfilmen/26639883-1-ger-DE/James-Cameron-will-Mission-Munroe-verfilmen_reference_4_3.jpg',
-       $author_link = 'https://de.wikipedia.org/wiki/James_Cameron',
        $author_name = 'James Cameron',
+       $author_icon = 'https://mar.prod.image.rndtech.de/var/storage/images/haz/nachrichten/kultur/kino/james-cameron-will-mission-munroe-verfilmen/26639883-1-ger-DE/James-Cameron-will-Mission-Munroe-verfilmen_reference_4_3.jpg',
+       $author_link = 'https://de.wikipedia.org/wiki/James_Cameron',       
        $title = 'Alien',
        $title_link = 'https://de.wikipedia.org/wiki/Alien_%E2%80%93_Das_unheimliche_Wesen_aus_einer_fremden_Welt',
        $collapsed = 'true',
-       $image = 'https://n-cdn.serienjunkies.de/hq/108641.jpg'
+       $image = 'https://n-cdn.serienjunkies.de/hq/108641.jpg',
+       $fields = '{"short": true,"title": "Verbrauch Tag","value": "10"},{"short": true,"title": "Verbrauch Vortag","value": "20"}'
 );
+```
+
+Bei den $fields muss ein JSON Codierter String übergeben werden mit den Inhalten für short / title / value.
+```php
+Array
+(
+    [0] => Array
+        (
+            [short] => true
+            [title] => Verbrauch Tag
+            [value] => 10
+        )
+
+    [1] => Array
+        (
+            [short] => true
+            [title] => Verbrauch Vortag
+            [value] => 20
+        )
+
+)
+```
+
+Beispielübergabe
+
+```php
+$array = [];
+array_push($array,array("short"=>"true","title"=>"Verbrauch Tag","value"=>"10"));
+array_push($array,array("short"=>"true","title"=>"Verbrauch Vortag","value"=>"20"));
+$fields = json_encode($array);
 ```
