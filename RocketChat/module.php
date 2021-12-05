@@ -26,7 +26,27 @@ declare(strict_types=1);
 		}
 
 		
-		public function SendRocket(
+		public function SendRocket_Msg(string $channel, string $message)
+		{
+			$ReturnMsg = $this->SendRocket(
+				$channel, 
+				$message, 
+				$alias=null, 
+				$avatar_url=null,
+				$color=null,
+				$author_name=null,
+				$author_icon=null,
+				$author_link=null,				
+				$title=null,
+				$title_link=null,
+				$collapsed=null,
+				$image=null,
+				$fields=null				
+			);
+			return $ReturnMsg;
+		}
+		
+		private function SendRocket(
 				string $channel, 
 				string $message, 
 				string $alias=null, 
